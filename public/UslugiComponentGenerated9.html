@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пожарная</title>
+    <link rel="stylesheet" href="UslugiStyles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="app">
+        <my-component></my-component>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            components: {
+                'my-component': {
+                    template: `
+          <nav class="flex justify-between items-center bg-zinc-800">
+            <a href="../src/components/SobytiaComponent.vue">
+              <div class="ml-5 flex items-center gap-2">
+                <img
+                  src="favicon.ico"
+                  alt="Logo"
+                  id="LOGOico"
+                  class="w-10 h-10 rounded-md"
+                />
+                <span class="text-white text-lg font-bold">MyPetro</span>
+              </div>
+            </a>
+
+            <div id="referenceDiv" class="flex-1 flex justify-center space-x-4">
+            <a href="../src/components/SobytiaComponent.vue">
+              Услуги  -->  Специализированная пожарная часть №1
+            </a>
+            </div>
+          </nav>
+                    <div id="main">
+                        <h1 class="header">Специализированная пожарная часть №1</h1>
+                        <div id="par">
+                        <span id="image-container">
+                            <img src="/sneakers/Uslugi/UslugiImage9.webp " alt="#">
+                        </span>
+                            <div>
+                            <p>Тип: <strong>пожарная</strong></p>
+                            <p>Адрес: <strong> Улица Советская, 38</strong></p>
+                            </div>
+                          </div>
+                    </div>`
+                }
+            }
+        });
+        app.mount('#app');
+    </script>
+</body>
+</html>
+            
